@@ -1,0 +1,394 @@
+[
+  {
+    "Question": "Do you fidget often?",
+    "Weight": 5
+  },
+  {
+    "Question": "How often do you feel sad or down?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you feel a bit sad or low?",
+    "Weight": 20
+  },
+  {
+    "Question": "Are there activities you used to enjoy that you don't feel excited about anymore?",
+    "Weight": 15
+  },
+  {
+    "Question": "Do you find it easy to focus on your schoolwork or hobbies?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you feel tired, even after a good night’s sleep?",
+    "Weight": 5
+  },
+  {
+    "Question": "Have you noticed any changes in your eating habits?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you sometimes feel unsure about what might happen next?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you feel guilty about something, even if it wasn't your fault?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you ever feel frustrated or upset more than usual?",
+    "Weight": 15
+  },
+  {
+    "Question": "How easy is it for you to fall asleep or wake up?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you sometimes prefer to be alone instead of hanging out with friends?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you feel restless or have a hard time sitting still?",
+    "Weight": 10
+  },
+  {
+    "Question": "Have you experienced any aches or pains that don't seem to have a clear reason?",
+    "Weight": 15
+  },
+  {
+    "Question": "Do you think about ways to take care of yourself?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do your responsibilities feel like too much?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you enjoy spending time with family and friends as much as you used to?",
+    "Weight": 10
+  },
+  {
+    "Question": "Have you noticed any changes in how well you're doing at school?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you sometimes feel like you depend on others for help?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you talk to yourself in a kind way?",
+    "Weight": 20
+  },
+  {
+    "Question": "Have you changed your daily routines, like brushing your teeth or taking baths?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you sometimes feel a little distant from your friends or family?",
+    "Weight": 25
+  },
+  {
+    "Question": "How often do you feel nervous in new situations?",
+    "Weight": 5
+  },
+  {
+    "Question": "Have you used things like snacks or games to feel better when you're stressed?",
+    "Weight": -5
+  },
+  {
+    "Question": "How often do you think about things that happened in the past?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you find it hard to get excited about things you used to love?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you feel like things might not get better?",
+    "Weight": 30
+  },
+  {
+    "Question": "Do you sometimes feel like crying when something is bothering you?",
+    "Weight": 25
+  },
+  {
+    "Question": "How often do your feelings change throughout the day?",
+    "Weight": 20
+  },
+  {
+    "Question": "Have you ever thought about what makes you happy or sad?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you feel like your thoughts are hard to follow?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you find it challenging to make choices, even small ones?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you feel like you're just going through your day?",
+    "Weight": 5
+  },
+  {
+    "Question": "Do you find it hard to feel happy about everyday things?",
+    "Weight": 15
+  },
+  {
+    "Question": "Have you noticed changes in how you feel about spending time with friends?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you feel worried when you're around other kids?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you feel tired even when you've had enough rest?",
+    "Weight": 20
+  },
+  {
+    "Question": "Have you felt empty or like something is missing in your day?",
+    "Weight": 25
+  },
+  {
+    "Question": "How often do you skip activities you used to love?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you ever feel unsure about your skills or abilities?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you forget things that you used to remember easily?",
+    "Weight": 15
+  },
+  {
+    "Question": "Do you prefer to be alone more often than before?",
+    "Weight": 20
+  },
+  {
+    "Question": "How easy is it for you to keep up with your chores or homework?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you feel like you're not quite yourself?",
+    "Weight": 30
+  },
+  {
+    "Question": "Do you find it hard to talk to others like you used to?",
+    "Weight": 30
+  },
+  {
+    "Question": "Have you noticed changes in how you feel about being close to people?",
+    "Weight": 30
+  },
+  {
+    "Question": "How often do you feel like others don't understand your feelings?",
+    "Weight": 25
+  },
+  {
+    "Question": "Do you feel frustrated with how you're feeling sometimes?",
+    "Weight": 25
+  },
+  {
+    "Question": "Have you had changes in your life that you're trying to figure out?",
+    "Weight": 25
+  },
+  {
+    "Question": "How often do you think about asking for help but don't?",
+    "Weight": 25
+  },
+  {
+    "Question": "Do you have thoughts that keep coming back, even when you want them to go away?",
+    "Weight": 25
+  },
+  {
+    "Question": "How often do you think about what makes you feel good or bad?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you find it easy to make new friends?",
+    "Weight": 10
+  },
+  {
+    "Question": "Have you felt different than your usual self lately?",
+    "Weight": 30
+  },
+  {
+    "Question": "How often do you feel excited about something you're doing?",
+    "Weight": 15
+  },
+  {
+    "Question": "Do you enjoy talking about your feelings with someone?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you find it hard to relax or unwind?",
+    "Weight": 25
+  },
+  {
+    "Question": "Do you feel like you have people you can trust?",
+    "Weight": 30
+  },
+  {
+    "Question": "How often do you think about your favorite things?",
+    "Weight": 5
+  },
+  {
+    "Question": "Do you like to play games that make you laugh?",
+    "Weight": 5
+  },
+  {
+    "Question": "How often do you feel overwhelmed by school or homework?",
+    "Weight": 20
+  },
+  {
+    "Question": "Have you noticed any changes in your energy levels during the day?",
+    "Weight": 15
+  },
+  {
+    "Question": "How do you feel when you think about going to school?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you ever feel like you need a break from everything?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you feel proud of something you've done?",
+    "Weight": 10
+  },
+  {
+    "Question": "Have you experienced any changes in your friendships?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you feel safe and secure at home?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you enjoy spending time outdoors or in nature?",
+    "Weight": 10
+  },
+  {
+    "Question": "How often do you feel comfortable sharing your thoughts with others?",
+    "Weight": 15
+  },
+  {
+    "Question": "Have you found any new hobbies that make you happy?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you enjoy spending time with your family?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you think about what you're grateful for?",
+    "Weight": 10
+  },
+  {
+    "Question": "Have you felt like trying new things lately?",
+    "Weight": 5
+  },
+  {
+    "Question": "How often do you feel content with how your day goes?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you like to help others when they're feeling down?",
+    "Weight": 20
+  },
+  {
+    "Question": "Do you enjoy reading books or stories that make you happy?",
+    "Weight": 5
+  },
+  {
+    "Question": "How often do you think about what you want to achieve?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you feel like you have enough time to do what you enjoy?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you notice beautiful things around you?",
+    "Weight": 10
+  },
+  {
+    "Question": "Have you felt comfortable talking about your worries?",
+    "Weight": 10
+  },
+  {
+    "Question": "How often do you feel like you can express yourself?",
+    "Weight": 15
+  },
+  {
+    "Question": "Do you enjoy listening to music that makes you feel good?",
+    "Weight": 5
+  },
+  {
+    "Question": "How do you feel when you're part of a team or group?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you find it easy to laugh or smile during the day?",
+    "Weight": 20
+  },
+  {
+    "Question": "How often do you talk about your dreams and goals?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you feel happy when you think about your favorite memories?",
+    "Weight": 5
+  },
+  {
+    "Question": "How often do you find joy in simple things, like a sunny day?",
+    "Weight": 15
+  },
+  {
+    "Question": "Have you felt proud of your accomplishments recently?",
+    "Weight": 15
+  },
+  {
+    "Question": "How do you feel when you think about your future?",
+    "Weight": 10
+  },
+  {
+    "Question": "Do you enjoy creating art or doing crafts?",
+    "Weight": 15
+  },
+  {
+    "Question": "How often do you spend time with pets or animals?",
+    "Weight": 10
+  },
+  {
+    "Question": "Have you felt comfortable asking for help when you need it?",
+    "Weight": 25
+  },
+  {
+    "Question": "How often do you feel connected to your friends?",
+    "Weight": 15
+  },
+  {
+    "Question": "Do you enjoy trying new foods or recipes?",
+    "Weight": 5
+  },
+  {
+    "Question": "How do you feel when someone listens to you?",
+    "Weight": 5
+  },
+  {
+    "Question": "Do you like to write down your thoughts or feelings?",
+    "Weight": 5
+  },
+  {
+    "Question": "How often do you enjoy moments of quiet time?",
+    "Weight": 2
+  },
+  {
+    "Question": "Do you find it easy to forgive others when they make mistakes?",
+    "Weight": 5
+  }
+]

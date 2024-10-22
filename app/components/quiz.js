@@ -1,89 +1,86 @@
-"use client";
-// components/Quiz.js
-import { useState, useEffect } from "react";
-import questions from "../data/questions.json";
+"use client"
+import { useState, useEffect } from 'react';
 
-const Quiz = () => {
+const questions = [
+  // Example data - replace this with your actual dataset
+  { question: "What is the capital of France?", score: 10 },
+  { question: "What is 2 + 2?", score: 5 },
+  { question: "Who wrote 'Hamlet'?", score: 7 },
+  { question: "What is the largest planet?", score: 15 },
+  { question: "What year did WW2 end?", score: 20 },
+];
+
+const Home = () => {
   const [randomQuestions, setRandomQuestions] = useState([]);
   const [selectedMultipliers, setSelectedMultipliers] = useState({});
 
-  // Get random questions function
-  const getRandomQuestions = () => {
-    const shuffled = [...questions].sort(() => 0.5 - Math.random());
-    const selectedQuestions = shuffled.slice(0, 25);
-    setRandomQuestions(selectedQuestions);
-    setSelectedMultipliers({});
-  };
-
+  // Fetch random questions when the page loads
   useEffect(() => {
-    getRandomQuestions(); // Initial load of random questions
+    const shuffled = [...questions].sort(() => 0.5 - Math.random());
+    const selectedQuestions = shuffled.slice(0, 5); // Change 5 to 25 for more questions
+    setRandomQuestions(selectedQuestions);
   }, []);
 
-  // Handle circle press event
   const handleCirclePress = (questionIndex, circleIndex) => {
-    setSelectedMultipliers((prev) => ({
+    setSelectedMultipliers(prev => ({
       ...prev,
-      [questionIndex]: circleIndex + 1,
+      [questionIndex]: circleIndex + 1, // 1x to 5x (0-indexed, so add 1)
     }));
   };
 
-  // Calculate total score
   const calculateTotalScore = () => {
     let totalScoreWithMultipliers = 0;
     let totalScoreWithoutMultipliers = 0;
-    let maximumScore = 0;
 
     randomQuestions.forEach((question, index) => {
       const multiplier = selectedMultipliers[index] || 1;
       totalScoreWithMultipliers += question.score * multiplier;
       totalScoreWithoutMultipliers += question.score;
-      maximumScore = totalScoreWithoutMultipliers * 5;
     });
 
-    alert(
-      `Scores\nTotal Score (With Multipliers): ${totalScoreWithMultipliers}\nPercentage in between: ${Math.round(
-        ((totalScoreWithMultipliers - totalScoreWithoutMultipliers) /
-          (maximumScore - totalScoreWithoutMultipliers)) *
-          100
-      )}%\nTotal Score (Without Multipliers): ${totalScoreWithoutMultipliers}`
-    );
+    alert(`Total Score (With Multipliers): ${totalScoreWithMultipliers}\nTotal Score (Without Multipliers): ${totalScoreWithoutMultipliers}`);
   };
 
   const circleColors = [
-    "#14bdff",
-    "#a4dfff",
-    "#A9A9A9",
-    "#d6b2f6",
-    "#be82ed",
+    '#5fa2e0',  // Light blue
+    '#0074D9',  // Darker blue
+    '#A9A9A9',  // Gray (middle)
+    '#9370DB',  // Light purple
+    '#4B0082',  // Dark purple
   ];
 
+  const circleSizes = [60, 50, 40, 50, 60];
+
   return (
-    <div className="quiz-container">
-      <div className="multiplier-header">
-        {[1, 2, 3, 4, 5].map((multiplier) => (
-          <span key={multiplier} className="multiplier">
-            {multiplier}x
-          </span>
+    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+      {/* Multiplier Labels */}
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+        {[1, 2, 3, 4, 5].map((multiplier, index) => (
+          <div key={index} style={{ margin: '0 15px', fontWeight: 'bold' }}>{multiplier}x</div>
         ))}
       </div>
 
-      <div className="questions">
+      <div>
         {randomQuestions.map((item, questionIndex) => (
-          <div key={questionIndex} className="question-item">
-            <h2>{item.question}</h2>
+          <div key={questionIndex} style={{ marginBottom: '40px', textAlign: 'center' }}>
+            <h3>{item.question}</h3>
             <p>Score: {item.score}</p>
-            <div className="circle-row">
+
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
               {[0, 1, 2, 3, 4].map((circleIndex) => {
                 const isSelected = selectedMultipliers[questionIndex] === circleIndex + 1;
-                const circleSizes = [60, 50, 40, 50, 60];
                 return (
-                  <button
+                  <div
                     key={circleIndex}
                     onClick={() => handleCirclePress(questionIndex, circleIndex)}
-                    className={`circle ${isSelected ? 'selected' : ''}`}
                     style={{
                       width: circleSizes[circleIndex],
                       height: circleSizes[circleIndex],
+                      borderRadius: '50%',
+                      border: `2px solid ${circleColors[circleIndex]}`,
+                      backgroundColor: isSelected ? circleColors[circleIndex] : 'transparent',
+                      margin: '0 10px',
+                      cursor: 'pointer',
                     }}
                   />
                 );
@@ -91,8 +88,21 @@ const Quiz = () => {
             </div>
           </div>
         ))}
+      </div>
 
-        <button onClick={calculateTotalScore} className="submit-button">
+      {/* Submit Button */}
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <button
+          onClick={calculateTotalScore}
+          style={{
+            padding: '10px 20px',
+            backgroundColor: '#4CAF50',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+          }}
+        >
           Submit
         </button>
       </div>
@@ -100,4 +110,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default Home;

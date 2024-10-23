@@ -379,7 +379,7 @@ const Home = () => {
         100
     );
     // Save scores in cookies
-    Cookies.set("depressionPercentage", totalScoreWithMultipliers);
+    Cookies.set("depressionPercentage", percentageWithinRange);
     alert(
       `Your score is ${totalScoreWithMultipliers} and the percentage difference is ${percentageWithinRange}%`
     );

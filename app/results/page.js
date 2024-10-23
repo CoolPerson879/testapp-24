@@ -13,11 +13,11 @@ const Results = () => {
   const boxData = [
     {
       title: "Depression",
-      content: `Cookie Data: ${depressionLowerBound}, ${depressionTotal}, ${thirdCookieData}`,
+      content: `Cookie Data: ${depressionLowerBound}, ${depressionTotal}`,
     },
     {
       title: "Eating Disorder",
-      content: `Cookie Data: ${fourthCookieData}`,
+      content: `Cookie Data: `,
     },
     { title: "ADHD", content: "No specific data." },
     { title: "Autism", content: "No specific data." },

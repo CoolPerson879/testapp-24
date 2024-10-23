@@ -363,19 +363,27 @@ const Home = () => {
   const calculateTotalScore = () => {
     let totalScoreWithMultipliers = 0;
     let totalScoreWithoutMultipliers = 0;
-    let upperBound = 0;
+    let upperbound = 0;
+    let percentageWithinRange = 0;
 
     randomQuestions.forEach((question, index) => {
       const multiplier = selectedMultipliers[index] || 1;
       totalScoreWithMultipliers += question.score * multiplier;
       totalScoreWithoutMultipliers += question.score;
-      upperBound = totalScoreWithoutMultipliers * 5;
+      upperbound += question.score * 5;
     });
+
+    percentageWithinRange = Math.round(
+      ((totalScoreWithMultipliers - totalScoreWithoutMultipliers) /
+        (upperbound - totalScoreWithoutMultipliers)) *
+        100
+    );
     // Save scores in cookies
-    Cookies.set("depressionTOTAL", totalScoreWithMultipliers);
-    Cookies.set("depressionLOWER", totalScoreWithoutMultipliers);
-    Cookies.set("depressionUPPER", upperBound);
-    window.location.href = "/results";
+    Cookies.set("depressionPercentage", totalScoreWithMultipliers);
+    alert(
+      `Your score is ${totalScoreWithMultipliers} and the percentage difference is ${percentageWithinRange}%`
+    );
+    // window.location.href = "/results";
 
     // Without is lowerbound, with multipliers is score, upperbound is without * 5
     // Navigate to results page or show them in a new page

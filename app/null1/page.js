@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
+import "@fontsource/nunito";
 
 const questions = [
   { question: "Do you fidget often?", score: 5 },
@@ -380,10 +381,7 @@ const Home = () => {
     );
     // Save scores in cookies
     Cookies.set("depressionPercentage", percentageWithinRange);
-    alert(
-      `Your score is ${totalScoreWithMultipliers} and the percentage difference is ${percentageWithinRange}%`
-    );
-    // window.location.href = "/results";
+    window.location.href = "/results";
 
     // Without is lowerbound, with multipliers is score, upperbound is without * 5
     // Navigate to results page or show them in a new page
@@ -395,7 +393,7 @@ const Home = () => {
     "#5fa2e0", // Lighter blue
     "#A9A9A9", // Gray (middle)
     "#9370DB", // Light purple
-    "#4B0082", // Dark purple (right)
+    "#674e99", // Dark purple (right)
   ];
 
   const circleSizes = [60, 50, 40, 50, 60];
@@ -408,6 +406,7 @@ const Home = () => {
         backgroundColor: "#fff", // White background for the whole screen
         minHeight: "100vh", // Ensure the height covers the whole viewport
         paddingTop: "20px", // Ensure the top is not cut off
+        fontFamily: "Nunito", // Use Nunito font for the whole page
       }}
     >
       <div

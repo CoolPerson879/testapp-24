@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import "@fontsource/nunito";
 
 const Landing = () => {
   const handleStart = () => {
@@ -12,6 +13,7 @@ const Landing = () => {
       style={{
         display: "flex",
         justifyContent: "center",
+        fontFamily: "Nunito, sans-serif",
         alignItems: "center",
         flexDirection: "column",
         backgroundColor: "#fff",
@@ -53,7 +55,7 @@ const Landing = () => {
         onClick={handleStart}
         style={{
           padding: "12px 25px",
-          backgroundColor: "#4CAF50",
+          backgroundColor: "#9370DB",
           color: "white",
           border: "none",
           borderRadius: "25px",
